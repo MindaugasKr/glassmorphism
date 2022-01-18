@@ -1,4 +1,6 @@
-export const home = {
+import {Document} from "../../types";
+
+export const home: Document<any> = {
   name: 'page',
   title: 'Page',
   type: 'document',
