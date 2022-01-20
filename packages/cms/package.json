@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "cms",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -9,7 +9,9 @@
   "scripts": {
     "start": "sanity start",
     "build": "sanity build",
-    "deploy": "sanity graphql deploy"
+    "deploy": "sanity graphql deploy",
+    "lint": "eslint \"**/*.{js,ts,tsx,css,scss}\" && yarn tsc --noEmit --skipLibCheck",
+    "lint:fix": "prettier --write \"**/*.{js,ts,tsx,css,scss}\""
   },
   "keywords": [
     "sanity"
@@ -27,5 +29,12 @@
     "sanity-plugin-better-slug": "^1.0.0",
     "styled-components": "^5.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "eslint": "^8.7.0",
+    "eslint-config-sanity": "^5.1.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  }
 }

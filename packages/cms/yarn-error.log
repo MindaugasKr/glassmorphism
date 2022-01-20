@@ -1,0 +1,69 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add prettier
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\M\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Oculus\Support\oculus-runtime;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\PWPW;C:\Program Files\PWPW;C:\Users\M\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Users\M\.cargo\bin;C:\Users\M\AppData\Local\Android\Sdk\platform-tools;C:\Users\M\AppData\Local\Android\Sdk\tools;C:\Users\M\AppData\Local\jdk-11.0.2\bin;C:\Users\M\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\WebStorm 2021.3.1\bin;C:\Program Files\heroku\bin;C:\Users\M\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\M\Documents\programming\for fun\in progress\glassmorphism\node_modules\.bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.0.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\M\Documents\programming\for fun\in progress\glassmorphism\packages\cms\package.json: Unexpected string in JSON at position 329
+      at JSON.parse (<anonymous>)
+      at C:\Users\M\AppData\Roaming\nvm\v16.0.0\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\M\AppData\Roaming\nvm\v16.0.0\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\M\AppData\Roaming\nvm\v16.0.0\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "cms",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "main": "package.json",
+    "author": "Mindaugas Kriksciukas",
+    "license": "UNLICENSED",
+    "scripts": {
+      "start": "sanity start",
+      "build": "sanity build",
+      "deploy": "sanity graphql deploy",
+      "lint": "eslint \"**/*.{js,ts,tsx}\""
+      "lint:fix": "yarn run :fix"
+    },
+    "keywords": [
+      "sanity"
+    ],
+    "dependencies": {
+      "@sanity/base": "^2.24.1",
+      "@sanity/core": "^2.24.0",
+      "@sanity/default-layout": "^2.24.1",
+      "@sanity/default-login": "^2.24.1",
+      "@sanity/desk-tool": "^2.24.1",
+      "@sanity/vision": "^2.24.1",
+      "prop-types": "^15.7",
+      "react": "^17.0",
+      "react-dom": "^17.0",
+      "sanity-plugin-better-slug": "^1.0.0",
+      "styled-components": "^5.2.0"
+    },
+    "devDependencies": {
+      "@typescript-eslint/eslint-plugin": "^5.10.0",
+      "@typescript-eslint/parser": "^5.10.0",
+      "eslint": "^8.7.0",
+      "eslint-config-sanity": "^5.1.0",
+      "typescript": "^4.5.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
