@@ -85,6 +85,18 @@ export type SlugField<Name extends string = string> = CommonFieldProps & {
   };
 };
 
+export type BetterSlugField<Name extends string = string> = CommonFieldProps & {
+  name: Name;
+  type: 'better-slug';
+  options?: {
+    source?: string;
+    basePath: string | ((document: unknown) => string);
+    isUnique?: (value: unknown) => void,
+    maxLength?: number,
+    slugify: (input: string) => string;
+  };
+};
+
 export type UrlField<Name extends string = string> = CommonFieldProps & {
   name: Name;
   type: 'url';
@@ -170,6 +182,7 @@ export type Field<Name extends string = string> =
   | BooleanField<Name>
   | DateField<Name>
   | SlugField<Name>
+  | BetterSlugField<Name>
   | UrlField<Name>
   | ArrayField<Name>
   | ReferenceField<Name>

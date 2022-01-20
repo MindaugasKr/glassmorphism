@@ -1,4 +1,5 @@
 import {Document} from "../../types";
+import {betterSlug} from "../../fields/betterSlug";
 
 export const home: Document<any> = {
   name: 'page',
@@ -11,12 +12,10 @@ export const home: Document<any> = {
       type: 'string',
     },
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      description:
-        'If not happy with what the system generated, you can hand-edit it here',
+      name: 'title',
+      type: 'string',
     },
+    betterSlug(),
     {
       name: 'message',
       title: 'Message',

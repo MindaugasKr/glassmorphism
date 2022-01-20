@@ -2534,7 +2534,7 @@
   resolved "https://registry.yarnpkg.com/@sanity/asset-utils/-/asset-utils-1.2.3.tgz#a90c7895c6506405d64c2363db131923ba1fa6ef"
   integrity sha512-0eOR0D6zcqd6nEmAGIJ93ibRGO6ocYzQ5aEuyYvngHy5MDDjUfC821UnF/YPIcxiMXg2DLDjWd4EPt9F8frKNQ==
 
-"@sanity/base@2.25.0", "@sanity/base@^2.24.1":
+"@sanity/base@2.25.0", "@sanity/base@>= 2.5.0", "@sanity/base@^2.24.1":
   version "2.25.0"
   resolved "https://registry.yarnpkg.com/@sanity/base/-/base-2.25.0.tgz#f662901b11163015ae31d0c20404468a75406552"
   integrity sha512-rWL2kpcEPUgEcX2srufUnph79HR6lmnWrJ/a0Bxe1vAGDC3GmfrXP8bk61pa5mOjXEkhA40mqq22a9g5PFSOgA==
@@ -3103,7 +3103,7 @@
     react "17.0.1"
     rxjs "^6.5.3"
 
-"@sanity/ui@^0.37.2":
+"@sanity/ui@>= 0.33.9", "@sanity/ui@^0.37.2":
   version "0.37.2"
   resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-0.37.2.tgz#f58c518d14f0e741c707642a91144d95ca456ebb"
   integrity sha512-WVPR06HCP325OjPuiAanXLFoSSdJrOV6/zEs9w7UuSH5ov0zOP2qWFGOxOu2aeZexpQCS73SFTb8+UXOOlRp0Q==
@@ -3120,7 +3120,7 @@
     react-popper "^2.2.5"
     react-refractor "^2.1.5"
 
-"@sanity/util@2.24.0":
+"@sanity/util@2.24.0", "@sanity/util@>= 2.5.0":
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/@sanity/util/-/util-2.24.0.tgz#0c8ddf395462106fb1055032db11d58c08f26346"
   integrity sha512-I7pMAfY7QbZ5wt/ahJcDTBG/8Wh3nyvDbc0naQH3oyyZBhpTtGpPhsSmW073OvCX3fDPkT7GMZaaQh+OIDXuYA==
@@ -3538,6 +3538,11 @@
   version "0.16.2"
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
+
+"@types/speakingurl@^13.0.2":
+  version "13.0.3"
+  resolved "https://registry.npmjs.org/@types/speakingurl/-/speakingurl-13.0.3.tgz#cbfe3d0182c7af92ebac7e587bb9228472e05133"
+  integrity sha512-nBHZAaNTEw1YG3ROL7HtTp7HjW8HD7DuFYbWoonUKTZHj7eyOt4vPzyMcc3+xgWNv7xi2rziaiBXHIq6wBeyrw==
 
 "@types/tmp@^0.0.33":
   version "0.0.33"
@@ -15352,6 +15357,17 @@ sanity-diff-patch@^1.0.9:
   dependencies:
     diff-match-patch "^1.0.5"
 
+sanity-plugin-better-slug@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/sanity-plugin-better-slug/-/sanity-plugin-better-slug-1.0.0.tgz#5fd8511f6fa4f4fed9248d3c8a6462f001d3fdef"
+  integrity sha512-OOgMQv0FtsCbJ1LCpYq+iJfCXlvNxVrqMa1EyzO9X+fI3oqGpBafzB7P9FvSxxtYOxnnVU3dPuwXOUllwi4BQA==
+  dependencies:
+    "@sanity/base" ">= 2.5.0"
+    "@sanity/ui" ">= 0.33.9"
+    "@sanity/util" ">= 2.5.0"
+    "@types/speakingurl" "^13.0.2"
+    speakingurl "^14.0.1"
+
 sass-loader@^10.1.1:
   version "10.2.1"
   resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-10.2.1.tgz#17e51df313f1a7a203889ce8ff91be362651276e"
@@ -15904,6 +15920,11 @@ speakingurl@^13.0.0:
   version "13.0.0"
   resolved "https://registry.yarnpkg.com/speakingurl/-/speakingurl-13.0.0.tgz#266c52d2b47585375af058e4783c8d1097a2d3db"
   integrity sha1-JmxS0rR1hTda8FjkeDyNEJei09s=
+
+speakingurl@^14.0.1:
+  version "14.0.1"
+  resolved "https://registry.npmjs.org/speakingurl/-/speakingurl-14.0.1.tgz#f37ec8ddc4ab98e9600c1c9ec324a8c48d772a53"
+  integrity sha512-1POYv7uv2gXoyGFpBCmpDVSNV74IfsWlDW216UPjbWufNf+bSU6GdbDsxdcxtfwb4xlI3yxzOTKClUosxARYrQ==
 
 speedometer@~1.0.0:
   version "1.0.0"
