@@ -1,10 +1,10 @@
 {
-  "name": "glassmorphism",
+  "name": "web",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Mindaugas Kriksciukas <mindaugas.kriksciukas.jp@gmail.com>",
+  "author": "Mindaugas Kriksciukas",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",

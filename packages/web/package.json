@@ -1,9 +1,10 @@
 {
-  "name": "glassmorphism",
+  "name": "cms",
   "version": "1.0.0",
   "private": true,
-  "description": "glassmorphism",
-  "author": "Mindaugas",
+  "description": "",
+  "author": "Mindaugas Kriksciukas",
+  "license": "UNLICENSED",
   "keywords": [
     "gatsby"
   ],

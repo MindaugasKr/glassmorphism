@@ -1,0 +1,10 @@
+{
+  "name": "glassmorphism",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "description": "Demo site",
+  "main": "index.js",
+  "author": "Mindaugas Kriksciukas",
+  "license": "UNLICENSED"
+}
