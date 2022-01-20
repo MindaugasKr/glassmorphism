@@ -2,9 +2,18 @@
   "name": "glassmorphism",
   "version": "1.0.0",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "description": "Demo site",
   "main": "index.js",
   "author": "Mindaugas Kriksciukas",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "lerna run start --parallel",
+    "build": "lerna run build --parallel"
+  },
+  "dependencies": {
+    "lerna": "^4.0.0"
+  }
 }
