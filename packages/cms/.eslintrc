@@ -1,4 +1,8 @@
 {
   "env": {"node": true, "browser": true},
-  "extends": ["sanity/react", "sanity/typescript"]
+  "extends": ["sanity/react", "sanity/typescript", "prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "plugins": ["prettier"]
 }

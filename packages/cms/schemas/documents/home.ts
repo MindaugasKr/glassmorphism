@@ -1,5 +1,5 @@
-import {Document} from "../../types";
-import {betterSlug} from "../../fields/betterSlug";
+import { Document } from '../../types'
+import { betterSlug } from '../../fields/betterSlug'
 
 export const home: Document<any> = {
   name: 'page',
@@ -29,11 +29,11 @@ export const home: Document<any> = {
       message: 'message',
     },
     prepare(selection) {
-      const { slug, template, message } = selection;
+      const { slug, template, message } = selection
       return {
         title: `${slug.current} [${template}]`,
         subtitle: message,
-      };
+      }
     },
   },
-};
+}
