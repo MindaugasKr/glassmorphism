@@ -11,7 +11,9 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "lerna run start --parallel",
-    "build": "lerna run build --parallel"
+    "build": "lerna run build --parallel",
+    "lint": "lerna run lint --parallel",
+    "ts:check": "lerna run ts:check --parallel"
   },
   "dependencies": {},
   "devDependencies": {
