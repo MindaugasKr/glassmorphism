@@ -12,7 +12,8 @@
   "scripts": {
     "start": "lerna run start --parallel",
     "build": "lerna run build --parallel",
-    "lint": "lerna run lint --parallel",
+    "lint:fix": "lerna run lint:fix --parallel",
+    "lint:check": "lerna run lint:check --parallel",
     "ts:check": "lerna run ts:check --parallel"
   },
   "dependencies": {},
