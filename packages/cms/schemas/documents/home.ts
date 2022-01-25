@@ -1,11 +1,15 @@
 import { Document } from '../../types'
 import { betterSlug } from '../../fields/betterSlug'
+import { pageBuilder } from '../../fields/pageBuilder'
 
 export const home: Document<any> = {
   name: 'page',
   title: 'Page',
   type: 'document',
   fields: [
+    // TODO:
+    //  remove unnecesary fields,
+    //  add seo fields,
     {
       name: 'template',
       title: 'Template',
@@ -21,6 +25,7 @@ export const home: Document<any> = {
       title: 'Message',
       type: 'string',
     },
+    pageBuilder(),
   ],
   preview: {
     select: {
