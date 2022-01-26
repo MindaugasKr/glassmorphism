@@ -1,10 +1,10 @@
-import { Document } from '../../types'
-import { betterSlug } from '../../fields/betterSlug'
-import { pageBuilder } from '../../fields/pageBuilder'
+import { Document } from '../../types';
+import { betterSlug } from '../../fields/betterSlug';
+import { pageBuilder } from '../../fields/pageBuilder';
 
 export const home: Document<any> = {
-  name: 'page',
-  title: 'Page',
+  name: 'homePage',
+  title: 'Home Page',
   type: 'document',
   fields: [
     // TODO:
@@ -34,11 +34,11 @@ export const home: Document<any> = {
       message: 'message',
     },
     prepare(selection) {
-      const { slug, template, message } = selection
+      const { slug, template, message } = selection;
       return {
         title: `${slug.current} [${template}]`,
         subtitle: message,
-      }
+      };
     },
   },
-}
+};

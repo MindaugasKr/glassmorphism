@@ -1,4 +1,4 @@
-import { ArrayField } from '../types'
+import { ArrayField } from '../types';
 
 export const pageBuilder = (): ArrayField => {
   return {
@@ -6,5 +6,5 @@ export const pageBuilder = (): ArrayField => {
     type: 'array',
     title: 'Page builder',
     of: [{ type: 'hero' }],
-  }
-}
+  };
+};

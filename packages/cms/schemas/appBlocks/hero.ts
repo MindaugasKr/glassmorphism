@@ -1,4 +1,4 @@
-import { ObjectField } from '../../types'
+import { ObjectField } from '../../types';
 
 export const hero: ObjectField<any> = {
   name: 'hero',
@@ -25,11 +25,11 @@ export const hero: ObjectField<any> = {
       description: 'description',
     },
     prepare(selection) {
-      const { title, description } = selection
+      const { title, description } = selection;
       return {
         title: `${title} ${description}`,
         subtitle: 'hero',
-      }
+      };
     },
   },
-}
+};

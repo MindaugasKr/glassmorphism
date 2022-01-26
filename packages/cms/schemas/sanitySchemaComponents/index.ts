@@ -1,1 +1,0 @@
-export { cta } from './cta'
