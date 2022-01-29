@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import './PrimaryLayout.scss';
+import * as styles from './PrimaryLayout.module.scss';
 import Header from '../baseBlocks/Header';
 import Footer from '../baseBlocks/Footer';
 
@@ -8,10 +8,8 @@ interface IPrimaryLayout {
 }
 
 const PrimaryLayout: FC<IPrimaryLayout> = ({ children }) => {
-  const className = 'primary-layout';
-
   return (
-    <div className={className}>
+    <div className={styles.primaryLayout}>
       <Header />
       {children}
       <Footer />

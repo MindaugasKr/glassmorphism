@@ -1,0 +1,11 @@
+.hero {
+  display: block;
+
+  &__title {
+    color: green;
+
+    &--red {
+      color: red;
+    }
+  }
+}

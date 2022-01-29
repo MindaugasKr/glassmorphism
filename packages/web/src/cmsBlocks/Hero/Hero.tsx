@@ -1,5 +1,7 @@
 import React, { VFC } from 'react';
-import './Hero.scss';
+import classNames from 'classnames/bind';
+import './Hero.module.scss';
+import * as styles from './Hero.module.scss';
 import { Cta } from '../../types';
 
 export interface IHero {
@@ -11,9 +13,17 @@ export interface IHero {
 }
 
 const Hero: VFC<IHero> = () => {
-  const className = 'hero';
-
-  return <div className={className}>Hero placeholder</div>;
+  return (
+    <div className={styles.hero}>
+      <h2
+        className={classNames(styles.hero__title, {
+          [styles.hero__titleRed]: true,
+        })}
+      >
+        Hero placeholder
+      </h2>
+    </div>
+  );
 };
 
 export default Hero;
