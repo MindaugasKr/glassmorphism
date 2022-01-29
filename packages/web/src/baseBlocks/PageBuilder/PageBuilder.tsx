@@ -1,7 +1,7 @@
 import React, { VFC } from 'react';
-import { BlockDataList } from '../../types';
 import Hero from '../../cmsBlocks/Hero';
 import { BlockData } from '../../types/blockDataList.type';
+import { PageBuilderProps } from './PageBuilder.types.ts';
 
 const getBlocks = (blockData: BlockData) => {
   switch (blockData._type) {
@@ -11,11 +11,7 @@ const getBlocks = (blockData: BlockData) => {
   }
 };
 
-interface IPageBuilder {
-  blockDataList: BlockDataList;
-}
-
-const PageBuilder: VFC<IPageBuilder> = ({ blockDataList }) => {
+const PageBuilder: VFC<PageBuilderProps> = ({ blockDataList }) => {
   const className = 'page-builder';
 
   return (

@@ -1,11 +1,8 @@
 import React, { VFC } from 'react';
 import * as styles from './Footer.module.scss';
+import { FooterProps } from './Footer.types';
 
-interface IFooter {
-  // placeholder
-}
-
-const Footer: VFC<IFooter> = () => {
+const Footer: VFC<FooterProps> = () => {
   return <div className={styles.footer}>Footer placeholder</div>;
 };
 

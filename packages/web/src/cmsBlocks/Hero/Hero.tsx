@@ -2,17 +2,9 @@ import React, { VFC } from 'react';
 import classNames from 'classnames/bind';
 import './Hero.module.scss';
 import * as styles from './Hero.module.scss';
-import { Cta } from '../../types';
+import { HeroProps } from './Hero.types';
 
-export interface IHero {
-  _type: 'hero';
-  _key: string;
-  title?: string | null;
-  description?: string | null;
-  ctaList?: Cta[];
-}
-
-const Hero: VFC<IHero> = () => {
+const Hero: VFC<HeroProps> = () => {
   return (
     <div className={styles.hero}>
       <h2

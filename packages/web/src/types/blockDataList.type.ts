@@ -1,5 +1,5 @@
-import { IHero } from '../cmsBlocks/Hero/Hero';
+import { HeroProps } from '../cmsBlocks/Hero/Hero.types';
 
-export type BlockData = IHero;
+export type BlockData = HeroProps;
 
 export type BlockDataList = BlockData[];
