@@ -1,6 +1,5 @@
 import React, { VFC } from 'react';
 import classNames from 'classnames/bind';
-import './Hero.module.scss';
 import * as styles from './Hero.module.scss';
 import { HeroProps } from './Hero.types';
 

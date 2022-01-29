@@ -1,4 +1,4 @@
-import { HeroProps } from '../cmsBlocks/Hero/Hero.types';
+import { HeroProps } from '@/cmsBlocks/Hero/Hero.types';
 
 export type BlockData = HeroProps;
 

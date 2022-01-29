@@ -38,5 +38,13 @@ module.exports = {
       __key: 'images',
     },
     `gatsby-plugin-typegen`,
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          '@': 'src',
+        },
+      },
+    },
   ],
 };
