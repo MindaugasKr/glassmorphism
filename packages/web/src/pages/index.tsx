@@ -1,7 +1,8 @@
-import React from 'react';
-import PrimaryLayout from '@/layouts/PrimaryLayout';
 import { graphql, useStaticQuery } from 'gatsby';
+import React from 'react';
+
 import PageBuilder from '@/baseBlocks/PageBuilder';
+import PrimaryLayout from '@/layouts/PrimaryLayout';
 import { BlockDataList } from '@/types';
 
 type HomePageData = {

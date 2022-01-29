@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "classnames": "^2.3.1",
+    "eslint-plugin-import": "^2.25.4",
     "gatsby": "^4.5.3",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-google-analytics": "^4.5.0",

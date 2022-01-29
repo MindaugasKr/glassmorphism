@@ -1,6 +1,8 @@
 import React, { VFC } from 'react';
+
 import Hero from '@/cmsBlocks/Hero';
 import { BlockData } from '@/types/blockDataList.type';
+
 import { PageBuilderProps } from './PageBuilder.types.ts';
 
 const getBlocks = (blockData: BlockData) => {

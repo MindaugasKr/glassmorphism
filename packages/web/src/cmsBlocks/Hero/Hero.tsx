@@ -1,7 +1,9 @@
-import React, { VFC } from 'react';
 import classNames from 'classnames/bind';
-import * as styles from './Hero.module.scss';
+import React, { VFC } from 'react';
+
 import { HeroProps } from './Hero.types';
+
+import * as styles from './Hero.module.scss';
 
 const Hero: VFC<HeroProps> = () => {
   return (

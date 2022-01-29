@@ -1,8 +1,11 @@
 import React, { FC } from 'react';
-import * as styles from './PrimaryLayout.module.scss';
-import Header from '@/baseBlocks/Header';
+
 import Footer from '@/baseBlocks/Footer';
+import Header from '@/baseBlocks/Header';
+
 import { PrimaryLayoutProps } from './PrimaryLayout.types';
+
+import * as styles from './PrimaryLayout.module.scss';
 
 const PrimaryLayout: FC<PrimaryLayoutProps> = ({ children }) => {
   return (
