@@ -23,7 +23,7 @@
     "@typescript-eslint",
     "prettier"
   ],
-  "ignorePatterns": ["gatsby-types.ts"],
+  "ignorePatterns": ["gatsby-types.ts", "public/**/*", "chache/**/*"],
   "rules": {
     "prettier/prettier": "error",
     "@typescript-eslint/no-empty-interface": "off",
